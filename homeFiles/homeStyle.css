@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #00BFFF;
+    position: fixed;
+    top: 0;
+    height: 12.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    padding: 0.75em;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1em;
+    transition: background-color 0.2s linear 0.1s, color 0.3s linear;
+}
+
+header a:hover {
+    background-color: white;
+    color: #00BFFF;
+}
+
+#name {
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+#name a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3em;
+    padding: 0.25em;
+    border-radius: 0;
+    background-color: #00BFFF;
+    text-decoration: line-through white;
+}
+
+main {
+    position: absolute;
+    top: 12.5%;
+    height: 87.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main i {
+    color: black;
+    font-style: normal;
+}
+
+main h1 {
+    color: #00BFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+main p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1em;
+}
+
+#bio {
+    display: inline-block;
+    margin-right: 8em;
+}
+
+main hr {
+    height: 0.1em;
+    width: 70%;
+    color: #00BFFF;
+    background-color: #00BFFF;
+}
+
+main ul {
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+main li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+main img {
+    height: 3em;
+    width: 3em;
+}
+
+main img:active {
+    opacity: 0.8;
+}
+
+#dp {
+    border: solid #00BFFF 2px;
+    border-radius: 3em;
+    width: 25%;
+    height: 80%;
+}
+
+#dp:active {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {  
+    header {
+        height: auto;
+        position: static;
+    }
+    
+    header li {
+        display: block;
+        width: 100%;
+        font-size: 100%;
+    }
+    
+    #name {
+        padding: 1.5em;
+    }
+    
+    main {
+        height: auto;
+        display: block;
+        position: static;
+        text-align: center;
+    }
+    
+    #bio {
+        margin: 0;
+    }
+    
+    #dp {
+        width: 60%;
+        height: 90%;
+    }
+}
