@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #00BFFF;
+    position: fixed;
+    top: 0;
+    height: 12.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    padding: 0.75em;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1em;
+    transition: background-color 0.2s linear 0.1s, color 0.3s linear;
+}
+
+header a:hover {
+    background-color: white;
+    color: #00BFFF;
+}
+
+#resume a {
+    background-color: white;
+    color: #00BFFF;
+}
+
+#name {
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+#name a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3em;
+    padding: 0.25em;
+    border-radius: 0;
+}
+
+#name a:hover {
+    background-color: #00BFFF;
+    text-decoration: line-through white;
+}
+
+main {
+    position: absolute;
+    top: 12.5%;
+    height: 87.5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main iframe {
+    border: solid #00BFFF 2px;
+    height: 90%;
+    width: 75%;
+}
+
+@media only screen and (max-width: 600px) {  
+    header {
+        height: auto;
+        position: static;
+    }
+    
+    header li {
+        display: block;
+        width: 100%;
+        font-size: 100%;
+    }
+    
+    #name {
+        padding: 1.5em;
+    }
+    
+    main {
+        margin-top: 25px;
+        height: auto;
+        display: block;
+        position: static;
+        text-align: center;
+    }
+}
