@@ -6,6 +6,19 @@ wpNext.addEventListener("click", scrollWp);
 var wpPics = ["projectsPics/wph.png", "projectsPics/wpd.png", "projectsPics/wpf.png"];
 var wpIndex = 0;
 
+var mcj = document.getElementById("mcjewelry");
+var mcjBack = document.getElementById("mcjb");
+mcjBack.addEventListener("click", scrollMcj);
+var mcjNext = document.getElementById("mcjn");
+mcjNext.addEventListener("click", scrollMcj);
+var mcjPics = [
+    "projectsPics/mcjewelry_pictures/search_parameters.png",
+    "projectsPics/mcjewelry_pictures/item_selection.png",
+    "projectsPics/mcjewelry_pictures/price_calculation.png",
+    "projectsPics/mcjewelry_pictures/admin_page.png"
+];
+var mcjIndex = 0;
+
 function scrollWp(event) {
     if(event.target.id == "wpb")
         wpIndex--;
@@ -16,4 +29,16 @@ function scrollWp(event) {
     if(wpIndex > 2)
         wpIndex = 0;
     wp.src = wpPics[wpIndex];
+}
+
+function scrollMcj(event) {
+    if(event.target.id == "mcjb")
+        mcjIndex--;
+    else
+        mcjIndex++;
+    if(mcjIndex < 0)
+        mcjIndex = 2;
+    if(mcjIndex > 3)
+        mcjIndex = 0;
+    mcj.src = mcjPics[mcjIndex];
 }
