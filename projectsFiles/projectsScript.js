@@ -12,10 +12,10 @@ mcjBack.addEventListener("click", scrollMcj);
 var mcjNext = document.getElementById("mcjn");
 mcjNext.addEventListener("click", scrollMcj);
 var mcjPics = [
-    "projectsPics/mcjewelry_pictures/search_parameters.png",
+    "projectsPics/mcjewelry_pictures/search_parameters.PNG",
     "projectsPics/mcjewelry_pictures/item_selection.png",
-    "projectsPics/mcjewelry_pictures/price_calculation.png",
-    "projectsPics/mcjewelry_pictures/admin_page.png"
+    "projectsPics/mcjewelry_pictures/price_calculation.PNG",
+    "projectsPics/mcjewelry_pictures/admin_page.PNG"
 ];
 var mcjIndex = 0;
 
