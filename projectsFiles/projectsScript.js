@@ -37,7 +37,7 @@ function scrollMcj(event) {
     else
         mcjIndex++;
     if(mcjIndex < 0)
-        mcjIndex = 2;
+        mcjIndex = 3;
     if(mcjIndex > 3)
         mcjIndex = 0;
     mcj.src = mcjPics[mcjIndex];
