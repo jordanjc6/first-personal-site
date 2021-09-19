@@ -19,6 +19,18 @@ var mcjPics = [
 ];
 var mcjIndex = 0;
 
+var lqa = document.getElementById("leaquotesapp");
+var lqaBack = document.getElementById("lqab");
+lqaBack.addEventListener("click", scrollLqa);
+var lqaNext = document.getElementById("lqan");
+lqaNext.addEventListener("click", scrollLqa);
+var lqaPics = [
+    "projectsPics/leaquotesapp_pics/home.PNG",
+    "projectsPics/leaquotesapp_pics/sidenav.PNG",
+    "projectsPics/leaquotesapp_pics/form.PNG",
+];
+var lqaIndex = 0;
+
 function scrollWp(event) {
     if(event.target.id == "wpb")
         wpIndex--;
@@ -41,4 +53,16 @@ function scrollMcj(event) {
     if(mcjIndex > 3)
         mcjIndex = 0;
     mcj.src = mcjPics[mcjIndex];
+}
+
+function scrollLqa(event) {
+    if(event.target.id == "lqab")
+        lqaIndex--;
+    else
+        lqaIndex++;
+    if(lqaIndex < 0)
+        lqaIndex = 2;
+    if(lqaIndex > 2)
+        lqaIndex = 0;
+    lqa.src = lqaPics[lqaIndex];
 }
